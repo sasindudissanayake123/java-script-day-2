@@ -59,6 +59,14 @@ console.log(student[0].marks[1]);
 
 //---- DOM(Document Object Model)-----------------//
 
-console.log(document);
-console.log(document.title);
-document.write("<p><b>Hello World<b></p>");
+//console.log(document);
+//console.log(document.title);
+//document.write("<p><b>Hello World<b></p>");
+
+
+
+//let title = Document.getElementById("title");
+//console.log(title);
+
+//title.innerText="Sasindu"
+
