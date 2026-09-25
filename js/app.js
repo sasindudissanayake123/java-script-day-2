@@ -117,17 +117,27 @@ function addCustoemrOnAction(){
 function loadTableOnAction(){
    let tblCustomer = document.getElementById("tblCustomer");
 
-   tblCustomer.innerHTML += `<tr>
-            <td>Kamal</td>
-            <td>Panadura</td>
-            <td>25</td>
-            <td>kamal@gmail.com</td>
-            <td>50000</td>
-        </tr>`;
+  // tblCustomer.innerHTML += `<tr>
+    //        <td>Kamal</td>
+      //      <td>Panadura</td>
+        //    <td>25</td>
+          //  <td>kamal@gmail.com</td>
+           // <td>50000</td>
+        //</tr>`;
     
-    console.log(tblCustomer);
-    
+    //console.log(tblCustomer);
+        let body = "";
+
+    for(let i=0; i<customerList.length; i++){
+        body += `<tr>
+            <td>${customerList[i].name}</td>
+            <td>${customerList[i].address}</td>
+            <td>${customerList[i].age}</td>
+            <td>${customerList[i].email}</td>
+            <td>${customerList[i].salary}</td>
+        </tr>`
+    }
+    tblCustomer.innerHTML = body;
 }
-   
 
 
