@@ -95,19 +95,39 @@ function validateMinimum(){
     }*/
 
 
-function addNumbers() {
-    let num1 = Number(document.getElementById("textNum01").value);
-    let num2 = Number(document.getElementById("textNum02").value);
-    let result = num1 + num2;
-    document.getElementById("result").innerText = "Result : " + result;
+let customerList = [];
+function addCustoemrOnAction(){
+   let txtName = document.getElementById("txtName").value;
+   let txtAddress = document.getElementById("txtAddress").value;
+   let txtAge = document.getElementById("txtAge").value;
+   let txtEmail = document.getElementById("txtEmail").value;
+   let txtSalary = document.getElementById("txtSalary").value;
+
+   let customer ={
+         name: txtName,
+         address: txtAddress,
+         age: txtAge,
+         email: txtEmail,
+         salary: txtSalary
+   }
+   customerList.push(customer);
+   console.log(customerList);
 }
 
-function subractNumbers() {
-    let num1 = Number(document.getElementById("textNum01").value);
-    let num2 = Number(document.getElementById("textNum02").value);
-    let result = num1 - num2;
-    document.getElementById("result").innerText = "Result : " + result;
-}
+function loadTableOnAction(){
+   let tblCustomer = document.getElementById("tblCustomer");
 
+   tblCustomer.innerHTML += `<tr>
+            <td>Kamal</td>
+            <td>Panadura</td>
+            <td>25</td>
+            <td>kamal@gmail.com</td>
+            <td>50000</td>
+        </tr>`;
+    
+    console.log(tblCustomer);
+    
+}
+   
 
 

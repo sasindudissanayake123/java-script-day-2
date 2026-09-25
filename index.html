@@ -9,12 +9,34 @@
    
 
      
+ <h1>Add Customer Form</h1>
 
-<input type="text" placeholder="Enter Number 01:" id="textNum01">
-<input type="text" placeholder="Enter Number 02:" id="textNum02">
-<h1 id="result">Result :</h1>
-<input type="button" value="add" onclick="addNumbers()">
-<input type="button" value="Subtract" onclick="subractNumbers()">
+     <input type="text" placeholder="Enter your name" id="txtName">
+     <input type="text" placeholder="Enter your address" id="txtAddress">
+     <input type="text" placeholder="Enter your age" id="txtAge">
+     <input type="text" placeholder="Enter your email" id="txtEmail">
+     <input type="text" placeholder="Enter your salary" id="txtSalary">
+
+     <table border="1" id = "tblCustomer">
+        <th>name</th>
+        <th>address</th>
+        <th>age</th>
+        <th>email</th>
+        <th>salary</th>
+
+        <tr>
+            <td>Saman</td>
+            <td>Galle</td>
+            <td>25</td>
+            <td>saman@gmail.com</td>
+            <td>50000</td>
+        </tr>
+        
+     </table>
+
+     <input type="button" value="Add Customer" onclick="addCustoemrOnAction()">
+     <input type="button" value="Load Table" onclick="loadTableOnAction()">
+
 
     
 
