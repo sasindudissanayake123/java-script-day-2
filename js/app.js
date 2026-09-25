@@ -27,6 +27,16 @@ let student = [
                 marks:100
 
             },
+            {
+                subject: "sinhala",
+                marks:200
+
+            },
+            {
+                subject: "history",
+                marks:50
+
+            },
 
     ]
 },
@@ -46,3 +56,9 @@ let student = [
 console.log(student);
 console.log(student[1].age);
 console.log(student[0].marks[1]);
+
+//---- DOM(Document Object Model)-----------------//
+
+console.log(document);
+console.log(document.title);
+document.write("<p><b>Hello World<b></p>");
