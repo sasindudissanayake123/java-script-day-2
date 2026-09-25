@@ -70,3 +70,44 @@ console.log(student[0].marks[1]);
 
 //title.innerText="Sasindu"
 
+//function btnAddAction() {
+    alert("Plus");
+//}
+
+
+/*let number = 0;
+
+function btnIncrementOnAction(){
+    number++;
+    counter.innerText = "Number Counter - " + number;
+}
+
+function btnDecrementOnAction(){
+    number--;
+    validateMinimum();
+    counter.innerText = "Number Counter - " + number;
+}
+
+function validateMinimum(){
+    if(number < 0){
+        number = 0;
+        counter.innerText = "Number Counter - 0" + number;
+    }*/
+
+
+function addNumbers() {
+    let num1 = Number(document.getElementById("textNum01").value);
+    let num2 = Number(document.getElementById("textNum02").value);
+    let result = num1 + num2;
+    document.getElementById("result").innerText = "Result : " + result;
+}
+
+function subractNumbers() {
+    let num1 = Number(document.getElementById("textNum01").value);
+    let num2 = Number(document.getElementById("textNum02").value);
+    let result = num1 - num2;
+    document.getElementById("result").innerText = "Result : " + result;
+}
+
+
+
