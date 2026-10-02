@@ -137,7 +137,7 @@ function loadTableOnAction(){
             <td>${customerList[i].salary}</td>
         </tr>`
     }
-    tblCustomer.innerHTML = body;
+    tblCustomer.innerHTML = body;;
 }
 
 
